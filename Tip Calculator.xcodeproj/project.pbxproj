@@ -13,6 +13,7 @@
 		FAB0D5D0238A44D0005A9811 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAB0D5CE238A44D0005A9811 /* Main.storyboard */; };
 		FAB0D5D2238A44D3005A9811 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAB0D5D1238A44D3005A9811 /* Assets.xcassets */; };
 		FAB0D5D5238A44D3005A9811 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAB0D5D3238A44D3005A9811 /* LaunchScreen.storyboard */; };
+		FAB0D5DD238A5859005A9811 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB0D5DC238A5859005A9811 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		FAB0D5D1238A44D3005A9811 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAB0D5D4238A44D3005A9811 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAB0D5D6238A44D3005A9811 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAB0D5DC238A5859005A9811 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				FAB0D5C8238A44D0005A9811 /* AppDelegate.swift */,
 				FAB0D5CA238A44D0005A9811 /* SceneDelegate.swift */,
 				FAB0D5CC238A44D0005A9811 /* ViewController.swift */,
+				FAB0D5DC238A5859005A9811 /* SettingsViewController.swift */,
 				FAB0D5CE238A44D0005A9811 /* Main.storyboard */,
 				FAB0D5D1238A44D3005A9811 /* Assets.xcassets */,
 				FAB0D5D3238A44D3005A9811 /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 				FAB0D5CD238A44D0005A9811 /* ViewController.swift in Sources */,
 				FAB0D5C9238A44D0005A9811 /* AppDelegate.swift in Sources */,
 				FAB0D5CB238A44D0005A9811 /* SceneDelegate.swift in Sources */,
+				FAB0D5DD238A5859005A9811 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
