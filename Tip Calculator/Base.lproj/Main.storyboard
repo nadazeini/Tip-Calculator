@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uqk-Th-m0w">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
@@ -53,7 +53,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                 <connections>
-                                    <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="editingChanged" id="KHy-qH-aCn"/>
+                                    <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="editingChanged" id="KXG-Oo-MFX"/>
                                 </connections>
                             </textField>
                             <segmentedControl contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Odx-10-v0u">
@@ -68,7 +68,7 @@
                                 <color key="tintColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="selectedSegmentTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
-                                    <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="valueChanged" id="75g-aD-pLE"/>
+                                    <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="valueChanged" id="yTj-AJ-gha"/>
                                 </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZA3-Yr-lMy">
@@ -98,9 +98,10 @@
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics"/>
                     <connections>
-                        <outlet property="billLabel" destination="0Jl-Qt-5Cl" id="Or3-GP-ePI"/>
-                        <outlet property="tipLabel" destination="nE3-7N-0b7" id="uIu-Tx-8aJ"/>
-                        <outlet property="totalLabel" destination="ZA3-Yr-lMy" id="JUa-xP-cJK"/>
+                        <outlet property="billField" destination="0Jl-Qt-5Cl" id="JDk-LZ-3Vn"/>
+                        <outlet property="tipControl" destination="Odx-10-v0u" id="UjM-to-zV4"/>
+                        <outlet property="tipLabel" destination="nE3-7N-0b7" id="qgh-T9-7UF"/>
+                        <outlet property="totalLabel" destination="ZA3-Yr-lMy" id="BnV-ii-ABx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -135,6 +136,8 @@
         <!--View Controller-->
         <scene sceneID="oPr-aa-HDa">
             <objects>
+                <exit id="7Bk-LU-f7l" userLabel="Exit" sceneMemberID="exit"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DBD-RS-DyS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="9zd-1g-K0d" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3hB-2u-NgM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -158,6 +161,10 @@
                                 </segments>
                                 <color key="tintColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="selectedSegmentTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="defaultSelect:" destination="7Bk-LU-f7l" eventType="valueChanged" id="3J6-rC-E7V"/>
+                                    <segue destination="uqk-Th-m0w" kind="push" id="odS-Jr-fqs"/>
+                                </connections>
                             </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="0.70316177644432643" green="0.86719055774756926" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -166,9 +173,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="VRV-Vm-MIj" propertyAccessControl="all"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="DBD-RS-DyS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3392.8000000000002" y="-36.431784107946029"/>
+            <point key="canvasLocation" x="4154" y="-247"/>
         </scene>
     </scenes>
     <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
