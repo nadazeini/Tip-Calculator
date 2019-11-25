@@ -26,8 +26,7 @@ The following **additional** features are implemented:
 ## Video Walkthrough 
 
 
-![demo](tip1.gif)
-
+<img src='http://g.recordit.co/CK7AF7rOcA.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
