@@ -14,17 +14,21 @@ class ViewController: UIViewController {
     @IBOutlet weak var tipLabel: UILabel!
     @IBOutlet weak var totalLabel: UILabel!
     @IBOutlet weak var tipControl: UISegmentedControl!
+    
+    @IBOutlet weak var fourtipLabel: UILabel!
+    @IBOutlet weak var threeTipLabel: UILabel!
+    @IBOutlet weak var twoTipLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         
     }
-
     @IBAction func onTap(_ sender: Any) {
 
         view.endEditing(true)
     }
     @IBAction func calculateTip(_ sender: Any) {
         //get bill
+        
         let bill = Double(billField.text!) ?? 0
         
         //calculate tip and total
@@ -36,6 +40,12 @@ class ViewController: UIViewController {
         //update the tip and total labels
         tipLabel.text = String(format: "$%.2f", tip)
         totalLabel.text = String(format: "$%.2f", total)
+        let twoTip = total/2
+        let threeTip = total/3
+        let fourTip = total/4
+        twoTipLabel.text = String(format: "$%.2f",twoTip)
+        threeTipLabel.text = String(format: "$%.2f",threeTip)
+        fourtipLabel.text = String(format: "$%.2f",fourTip)
       
     }
     
