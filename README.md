@@ -26,7 +26,7 @@ The following **additional** features are implemented:
 ## Video Walkthrough 
 
 
-![](tip1.gif)
+![demo](tip1.gif)
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
