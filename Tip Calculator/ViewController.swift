@@ -16,31 +16,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var tipControl: UISegmentedControl!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
 
     @IBAction func onTap(_ sender: Any) {
 
         view.endEditing(true)
     }
-    @IBAction func defaultSelect(_ sender: UISegmentedControl) {
-        print("hi")
-             if sender.selectedSegmentIndex == 0 {
-                 print("10 ")
-              }
-
-              if sender.selectedSegmentIndex == 1 {
-                  print("15 ")
-
-              }
-
-
-              if sender.selectedSegmentIndex == 2 {
-                  print("20")
-
-              }
-    }
-    
     @IBAction func calculateTip(_ sender: Any) {
         //get bill
         let bill = Double(billField.text!) ?? 0
@@ -56,5 +38,21 @@ class ViewController: UIViewController {
         totalLabel.text = String(format: "$%.2f", total)
       
     }
+    
+
+      override func viewWillAppear(_ animated: Bool) {
+          super.viewWillAppear(animated)
+          tipControl.selectedSegmentIndex = getDefaultTip()
+         
+          //Recalculate tip in case default tip percentage setting changed
+          self.calculateTip(tipControl)
+      }
+      
+      func getDefaultTip() -> Int {
+          let defaults = UserDefaults.standard
+          return defaults.integer(forKey: "defaultTip")
+      }
+      
+     
 }
 
