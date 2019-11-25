@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var twoTipLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        billField.becomeFirstResponder()
     }
     @IBAction func onTap(_ sender: Any) {
 
@@ -46,7 +46,7 @@ class ViewController: UIViewController {
         twoTipLabel.text = String(format: "$%.2f",twoTip)
         threeTipLabel.text = String(format: "$%.2f",threeTip)
         fourtipLabel.text = String(format: "$%.2f",fourTip)
-      
+        
     }
     
 
