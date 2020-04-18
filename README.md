@@ -25,13 +25,7 @@ The following **additional** features are implemented:
 
 ## Video Walkthrough 
 
-
-<img src='http://g.recordit.co/CK7AF7rOcA.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-GIF created with [LiceCap](http://www.cockos.com/licecap/).
-
-## Notes
-
-Challenge encountered during setting up default selection in settings and havong that reflected in main screen, resolved by learning more about Swift and Xcode
+<img src='http://g.recordit.co/gdDnhI2IyR.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ## License
 
