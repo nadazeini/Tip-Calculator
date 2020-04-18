@@ -21,6 +21,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         billField.becomeFirstResponder()
+        tipControl.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.white], for: UIControl.State.normal)
     }
     @IBAction func onTap(_ sender: Any) {
 
@@ -55,7 +56,7 @@ class ViewController: UIViewController {
           tipControl.selectedSegmentIndex = getDefaultTip()
          
           //Recalculate tip in case default tip percentage setting changed
-          self.calculateTip(tipControl)
+        self.calculateTip(tipControl!)
       }
       
       func getDefaultTip() -> Int {
